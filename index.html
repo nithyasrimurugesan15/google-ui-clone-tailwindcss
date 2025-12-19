@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Google</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Google favicon -->
+<link rel="icon" type="image/png" href="https://www.google.com/favicon.ico">
+
+  <link rel="stylesheet" href="output.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Slight font tuning to resemble Google -->
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  </style>
+</head>
+
+<body class="h-screen  flex flex-col text-sm text-gray-800">
+
+<!-- ================= HEADER ================= -->
+<header class="flex justify-between items-center px-6 py-4">
+  
+  <!-- Left -->
+  <div class="flex gap-5 ">
+    <a class="hover:underline cursor-pointer">About</a>
+    <a class="hover:underline cursor-pointer">Store</a>
+  </div>
+
+  <!-- Right -->
+  <div class="flex items-center  gap-4">
+    <a class="hover:underline cursor-pointer">Gmail</a>
+    <a class="hover:underline cursor-pointer">Images</a>
+
+    <!-- Labs -->
+    <div class="p-2 rounded-full hover:bg-gray-100 cursor-pointer">
+      <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-width="2" stroke-linecap="round"
+          d="M9 3h6l-1 7 4 7a2 2 0 0 1-2 3H8a2 2 0 0 1-2-3l4-7-1-7z"/>
+      </svg>
+    </div>
+
+    <!-- Apps -->
+    <div class="p-2 rounded-full hover:bg-gray-100 cursor-pointer">
+      <svg class="w-5 h-5 text-gray-600" fill="currentColor" viewBox="0 0 24 24">
+        <circle cx="5" cy="5" r="2"/>
+        <circle cx="12" cy="5" r="2"/>
+        <circle cx="19" cy="5" r="2"/>
+        <circle cx="5" cy="12" r="2"/>
+        <circle cx="12" cy="12" r="2"/>
+        <circle cx="19" cy="12" r="2"/>
+        <circle cx="5" cy="19" r="2"/>
+        <circle cx="12" cy="19" r="2"/>
+        <circle cx="19" cy="19" r="2"/>
+      </svg>
+    </div>
+
+    <!-- Profile -->
+    <div class="w-8 h-8 rounded-full bg-teal-600 text-white flex items-center justify-center font-medium">
+      N
+    </div>
+  </div>
+</header>
+
+<!-- ================= MAIN ================= -->
+<main class="flex flex-col items-center justify-center flex-grow">
+
+  <!-- Logo -->
+  <img
+    src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+    class="w-[272px] mb-10"
+    alt="Google"
+  />
+
+  <!-- Search bar -->
+  <div class="w-full max-w-[580px]">
+    <div
+      class="flex items-center gap-3 px-4 h-[50px]
+             rounded-full border border-gray-300
+             hover:shadow-md transition">
+
+      <!-- Plus -->
+      <div class="p-2 rounded-full hover:bg-gray-100 cursor-pointer">
+        <span class="text-2xl leading-none text-gray-600">+</span>
+      </div>
+
+      <!-- Input -->
+      <input
+        type="text"
+        class=" flex-grow outline-none text-base"
+      />
+
+      <!-- Voice -->
+      <div class="p-2 rounded-full hover:bg-gray-100 cursor-pointer" title="Search by voice">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Google_mic.svg"
+             class="w-5 h-5" />
+      </div>
+
+      <!-- Lens -->
+
+     <div class="p-2 rounded-full hover:bg-gray-100 cursor-pointer" title="Search by image">
+  <svg class="w-5 h-5 text-gray-600" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+    <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      d="M4 7h4l2-2h4l2 2h4v10H4z"/>
+    <circle cx="12" cy="12" r="3"/>
+  </svg>
+</div>
+
+      <!-- AI Mode -->
+      <div
+        class="flex items-center gap-1 px-3 py-1
+               border border-gray-300 rounded-full
+               hover:bg-gray-100 cursor-pointer text-sm">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-width="2"
+            d="M12 2l2.4 6.5L21 11l-6.6 2.5L12 20l-2.4-6.5L3 11l6.6-2.5z"/>
+        </svg>
+        <span>AI Mode</span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Buttons -->
+  <div class="mt-8 flex gap-4">
+    <button class="px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded">
+      Google Search
+    </button>
+    <button class="px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded">
+      I'm Feeling Lucky
+    </button>
+  </div>
+
+  <!-- Languages -->
+  <p class="mt-6 text-sm">
+    Google offered in:
+    <a class="text-blue-600 hover:underline ml-1">हिन्दी</a>
+    <a class="text-blue-600 hover:underline ml-1">বাংলা</a>
+    <a class="text-blue-600 hover:underline ml-1">తెలుగు</a>
+    <a class="text-blue-600 hover:underline ml-1">मराठी</a>
+    <a class="text-blue-600 hover:underline ml-1">தமிழ்</a>
+  </p>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-gray-100 text-gray-600">
+  <div class="px-6 py-3 border-b border-gray-400">India</div>
+  <div class="flex justify-between px-6 py-3">
+    <div class="flex gap-6">
+      <a class="hover:underline">Advertising</a>
+      <a class="hover:underline">Business</a>
+      <a class="hover:underline">How Search works</a>
+    </div>
+    <div class="flex gap-6">
+      <a class="hover:underline">Privacy</a>
+      <a class="hover:underline">Terms</a>
+      <a class="hover:underline">Settings</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
